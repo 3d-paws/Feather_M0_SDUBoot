@@ -8,17 +8,10 @@
 - Run ./build.sh
 - In your project folder create a folder called boot
 - Copy ~/Library/Arduino15/packages/adafruit/hardware/samd/1.7.16/libraries/SDU/src/boot/featherm0.h to \
-  your projecti's boot folder
+  your project's boot folder
 
-- Add below lines at the top of you code to add SDUBoot support. OR include the sdboot.h located in folder boot.
+- Add include the SDU.h located in folder boot to the top of your ino file.
 <pre>
-__attribute__ ((section(".sketch_boot")))
-unsigned char sduBoot[0x6000] = {
-    #include "boot/featherm0.h"
-};
-
-OR
-
-#include "boot/sdboot.h"
+#include "boot/SDU.h"
 </pre>
 
