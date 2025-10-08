@@ -19,6 +19,6 @@ unsigned char sduBoot[0x6000] = {
 
 OR
 
-#include "boot"/sdboot.h"
+#include "boot/sdboot.h"
 </pre>
 
